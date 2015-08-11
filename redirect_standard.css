@@ -1,0 +1,52 @@
+.down{
+            position: relative;
+            top: 38.2%;
+            left: 19.1%;
+            width: 61.8%;
+            height: 61.8%;
+            min-width: 600px;
+            text-align: center;
+        }
+         
+        .center_div{
+            position: relative;
+            display: inline-block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        html, body{
+            width: 99%;
+            height: 99%;
+            background-color: white; 
+            overflow: hidden;           
+        }       
+        a{
+            width: 190px;
+            height: 50px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .img_container{
+            width: 190px;
+            height: 50px;
+            background-image: url("button_normal.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: table-cell;
+            text-align: left;
+            vertical-align: middle;
+            color: #4E4E4E;
+            font-size: 1.05em;
+        }
+        .img_container:active{
+            background-image: url("button_pressed.png");
+            background-repeat: no-repeat;
+        }
+        
+        .icon{
+            height: 50%;
+            float: left;
+            margin-left: 5%;
+            margin-right: 2%;
+        }

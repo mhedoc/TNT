@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TNT - The New Tab</title>
+    
+    <style>
+        .left{
+            height: 800px;
+            float: left;
+            margin-left: 15px;
+            position: relative;
+            width: 135px;
+            font-size: larger;
+        }
+        .right{
+            float: none;
+        }
+        body{
+            padding-top: 15px;
+            font-family: Calibri;
+			min-width: 800px;
+        }
+        .ueberschrift{
+            font-size: larger;
+            margin-bottom: 30px;
+        }
+        #google_container{
+            margin-bottom: 5px;
+        }
+        .leftspace{
+            padding-left: 176px;
+        }
+        .first_column{
+            float: left;
+        }
+        .sec_column{
+            padding-left: 202px;
+        }
+        .choice{
+            margin-right: 10px;
+        }
+        #hint{
+        	color: green;
+        }
+        .custom{
+            padding-left: 176px;
+            padding-top: 10px;
+        }
+        th, td, tr{
+            min-width: 100px;
+            padding-right: 5px;
+        }
+        th{
+            text-align: left;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        #add_hint{
+            color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="left"> <img src="icon128.png" height="32" alt="TNT-icon"></div>
+    <div class="right">
+        <div class="ueberschrift">Settings</div>
+        <div id="google_container">
+            <input class="choice" name="choice" id="google" type="radio" value="google"/>www.google.
+            <select id="googlecountry">
+                <option value="com/ncr">com</option>
+                <option value="de">de</option>
+                <option value="co.uk">co.uk</option>
+                <option value="com.tw">com.tw</option>
+                <option value="cn">cn</option>
+                <option value="com.hk">com.hk</option>
+            </select>
+        </div>
+        <div id="custom_container">
+            <input name="choice" id="custom" type="radio" value="custom"/>
+            <input id="customaddress" type="url" size="22"/><span id="hint">www.example.com or example.com</span>
+            <div class="leftspace">
+                <sup>custom address or leave blank for blank tab</sup>
+            </div>
+        </div>
+        <div id="tnt_container">
+            <input class="choice" name="choice" id="tnt" type="radio" value="tnt"/>TNT-Page
+            <div class="leftspace">
+                <div class="first_column">
+                    <input name="tnt" type="checkbox" id="www.google.de"/>www.google.de<br />
+                    <input name="tnt" type="checkbox" id="www.google.com"/>www.google.com<br />
+                    <input name="tnt" type="checkbox" id="www.google.com.br"/>www.google.com.br<br />
+                    <input name="tnt" type="checkbox" id="www.google.it"/>www.google.it<br />
+                    <input name="tnt" type="checkbox" id="www.google.co.in"/>www.google.co.in<br />
+                    <input name="tnt" type="checkbox" id="www.youtube.com"/>www.youtube.com<br />
+                    <input name="tnt" type="checkbox" id="www.yahoo.com"/>www.yahoo.com<br />
+                    <input name="tnt" type="checkbox" id="www.yahoo.co.jp"/>www.yahoo.co.jp<br />
+                    <input name="tnt" type="checkbox" id="www.live.com"/>www.live.com<br />
+                    <input name="tnt" type="checkbox" id="www.msn.com"/>www.msn.com<br />
+                    <input name="tnt" type="checkbox" id="www.facebook.com"/>www.facebook.com<br />                    
+                    <input name="tnt" type="checkbox" id="www.myspace.com"/>www.myspace.com<br />
+                    <input name="tnt" type="checkbox" id="www.wikipedia.org"/>www.wikipedia.org<br />
+                    <input name="tnt" type="checkbox" id="www.blogger.com"/>www.blogger.com<br />
+                                                       
+                </div>
+                
+                <div class="sec_column">
+                    <input name="tnt" type="checkbox" id="www.microsoft.com"/>www.microsoft.com<br /> 
+                    <input name="tnt" type="checkbox" id="www.ebay.com"/>www.ebay.com<br />  
+                    <input name="tnt" type="checkbox" id="www.email.ru"/>www.email.ru<br />
+                    <input name="tnt" type="checkbox" id="www.web.de"/>www.web.de<br />
+                    <input name="tnt" type="checkbox" id="www.aol.com"/>www.aol.com<br />
+                    <input name="tnt" type="checkbox" id="www.wordpress.com"/>www.wordpress.com<br />
+                    <input name="tnt" type="checkbox" id="www.flickr.com"/>www.flickr.com<br />
+                    <input name="tnt" type="checkbox" id="www.vk.com"/>www.vk.com<br />
+                    <input name="tnt" type="checkbox" id="www.fc2.com"/>www.fc2.com<br />
+                    <input name="tnt" type="checkbox" id="www.sina.com.cn"/>www.sina.com.cn<br />
+                    <input name="tnt" type="checkbox" id="www.qq.com"/>www.qq.com<br />
+                    <input name="tnt" type="checkbox" id="www.hi5.com"/>www.hi5.com<br />
+                    <input name="tnt" type="checkbox" id="www.baidu.com"/>www.baidu.com<br />
+                    <input name="tnt" type="checkbox" id="www.taobao.com"/>www.taobao.com<br />                   
+                </div>             
+            </div>
+            <div class="custom">
+                <div>Add custom addresses to TNT-tab.</div>
+                Name:<input type="text" id="custom_name"/>URL:<input type="url" id="custom_url"/><input type="button" title="add" value="add" id="add_button"/><span id="add_hint">www.example.com or example.com</span>
+            </div>
+            <div class="custom" id="additional">
+                <table id="add_table">
+                </table>
+            </div>
+        </div>
+        <div id="status"></div> 
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

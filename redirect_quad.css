@@ -1,0 +1,51 @@
+.down{
+            position: relative;
+            top: 38.2%;
+            left: 19.1%;
+            width: 61.8%;
+            height: 61.8%;
+            min-width: 600px;
+            text-align: center;
+        }
+         
+        .center_div{
+            position: relative;
+            display: inline-block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        html, body{
+            width: 99%;
+            height: 99%;
+            background-color: white; 
+            overflow: hidden;           
+        }       
+        a{
+            width: 70px;
+            height: 70px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .img_container{
+            width: 70px;
+            height: 70px;
+            background-image: url("button_squared_normal.png");
+            background-repeat: no-repeat;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            color: black;
+            font-size: 0.9em;
+        }
+        .img_container:active{
+            background-image: url("button_squared_pressed.png");
+            background-repeat: no-repeat;
+        }
+        
+        .icon{
+            height: 35px;
+            width: 35px;
+            display: block;
+            margin-left: 25%;
+        }
